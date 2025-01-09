@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block main %}
+    <div>
+        <form action="/feedback" method="post">
+            <div class="mb-3">
+                <select class="form-select mx-auto w-auto" name="star">
+                    <option disabled selected>Stars</option>
+                    {% for star in stars %}
+                    
+                        <option value="{{ star }}">{{ star }}</option>
+        
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="comment" placeholder="Comment" type="text">
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="mb-3 fw-bold">
+        Contact me: <a href="mailto:contact@expensetracker.com">Email</a>
+    </div>
+    <hr>
+{% endblock %}

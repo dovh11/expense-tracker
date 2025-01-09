@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedbacked
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="text-start">Star</th>
+                    <th class="text-end">Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in feedbacks %}
+                    <tr>
+                        <td class="text-start">{{ row.star }}</td>
+                        <td class="text-end">{{ row.comment }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="mb-3 fw-bold">
+        Contact me: <a href="mailto:contact@expensetracker.com">Email</a>
+    </div>
+    <hr>
+{% endblock %}

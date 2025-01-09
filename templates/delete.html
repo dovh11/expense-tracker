@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete
+{% endblock %}
+
+{% block main %}
+    <form action="/delete" method="post">
+        <p class="mb-3">
+            Please submit the explicit time (year, month, date, hour, minute, second) when item was being inserted.
+        </p>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="date" placeholder="yyyy-mm-dd hh:mm:ss" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

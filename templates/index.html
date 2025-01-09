@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tracking
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h3 class="mb-3">Tracking Tool</h3>
+        <p class="mb-3">
+            [yyyy] tracking expense by year.
+        </p>
+        <p class="mb-3">
+            [yyyy-mm] tracking expense by month.
+        </p>
+        <p class="mb-3">
+            [yyyy-mm-dd] tracking expense by day.
+        </p>
+        <form action="/" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="filter" placeholder="yyyy-mm-dd" type="text">
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock %}

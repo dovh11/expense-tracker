@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Description</th>
+                <th class="text-end">Category</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in transactions %}
+                <tr>
+                    <td class="text-start">{{ row.description }}</td>
+                    <td class="text-end">{{ row.category }}</td>
+                    <td class="text-end">{{ row.price | usd }}</td>
+                    <td class="text-end">{{ row.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="2">Total Price</td>
+                <td class="border-0 w-bold text-end">{{ total_value | usd }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="2">Available Cash</td>
+                <td class="border-0 text-end">{{ cash | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
