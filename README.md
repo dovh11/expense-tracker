@@ -8,7 +8,7 @@ flask run
 This web app helps people tracking all expense manually on their own account.
 
 ## Technology Used
-- Languages: Python, HTML, CSS, Jinja.
+- Languages: Python, SQL, HTML, CSS, Jinja.
 - Frameworks: Bootstrap, Flask.
 - Database: SQLite.
 
