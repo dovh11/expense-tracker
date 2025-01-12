@@ -5,7 +5,8 @@ Execute `flask run` on your VSCode Terminal to run this web app locally.
 flask run
 ```
 ### Description:
-This web app helps people tracking all expenses manually on their own account.
+- This web app helps people tracking all expenses manually on their own account.
+- I have implemented this web app almost from scratch and just by myself.
 
 ## Technology Used
 - Languages: Python, SQL, HTML, CSS, Jinja.
