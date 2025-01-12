@@ -9,7 +9,7 @@ flask run
 - I have implemented this web app almost from scratch and just by myself.
 
 ## Technology Used
-- Languages: Python, SQL, HTML, CSS, Jinja.
+- Languages: Python, SQL, HTML, CSS.
 - Frameworks: Bootstrap, Flask.
 - Database: SQLite.
 
