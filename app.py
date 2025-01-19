@@ -76,9 +76,10 @@ def index():
         cash = cash_db[0]["cash"]
 
         # Get the total value of selected items
-        total_value = 0
-        for row in transactions_db:
-            total_value += row["price"]
+        total_value_db = db.execute(
+            "SELECT SUM(price) as total FROM transactions WHERE user_id = ? AND date LIKE ?", user_id, f"{time}%"
+        )
+        total_value = total_value_db[0]["total"]
 
         # Show expected result
         return render_template("filter.html", transactions=transactions_db, cash=cash, total_value=total_value)
