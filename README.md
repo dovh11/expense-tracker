@@ -7,6 +7,7 @@ flask run
 ### Description:
 - This web app helps people tracking all expenses manually on their own account.
 - I have implemented this web app almost from scratch and just by myself.
+- This is my first Computer Science project.
 
 ## Technology Used
 - Languages: Python, SQL, HTML, CSS.
@@ -34,11 +35,11 @@ flask run
 ### History
 - Show all items the user has added to this web app (excluding deleted items) from the time the account was created up until now.
 ### Top-up
-- Help a person top up money to their account, so they can balance their budge dynamically.
+- Help a person top up money into their account, so they can balance their budget dynamically.
 ### Withdraw
-- Help a person top up money to their account, so they can balance their budge dynamically.
+- Help a person withdraw money from their account, so they can balance their budget dynamically.
 ### Feedback
-- Everyone with an account can leave their feedback with comments and stars in Expense Tracker, then I direct users to a page with all feedbacks from others. This action will help me improve our web app to be more convenient and user-friendly.
+- Everyone with an account can leave their feedback with comments and stars in Expense Tracker, then I direct users to a page with all feedbacks from others. This action will help me improve my web app to be more convenient and user-friendly.
 
 ## Note
 > If you guys interested in my Expense Tracker web app, feel free to clone and explore it on your own device. However, since I have submitted this web app project to an online course, you are not allowed to use it for submitting as your own project in online courses, lest both you and I will be got trouble.
